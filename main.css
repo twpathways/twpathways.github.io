@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@font-face {
+  font-family: "Segoe UI Black";
+  src: url("assets/seguibl.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Yu Gothic UI Semibold";
+  src: url("assets/YuGothicUI-Semibold.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Adobe Gothic Std B";
+  src: url("assets/AdobeGothicStd-Bold.otf") format('opentype');
+}
+body {
+  background-image: url("assets/кирпичная\ стенка.png");
+  background-repeat: initial;
+  background-size: cover;
+}
+
+.smallscreen {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e1e2e;
+  padding: 10rem 9rem;
+  border-radius: 10px;
+  border: 1px solid #b4befe;
+  color: #cba6f7;
+  font-family: 'Fira Code', monospace;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: #4f4f4f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  font-family: 'Segoe UI Black';
+}
+header .logo {
+  color: #fff;
+  background-color: #2b2b2b;
+  padding: 0 4rem;
+  margin: 0 0.5rem;
+}
+header .logo:hover {
+  color: #c9c9c9;
+}
+#title {
+  display: table;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+header .navbar a {
+  font-size: 1.5rem;
+  padding: 2.4rem 7.5rem;
+  color: #c9c9c9;
+  background-color: #2b2b2b;
+  margin: 0 0.5rem;
+}
+header .navbar a:hover {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #859aee;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  margin-top: 6.5rem;
+  padding: 2rem 5rem;
+  background-color: #c9c9c9;
+  border: 10px solid #4f4f4f;
+}
+.banner {
+  border: 10px solid #4f4f4f;
+}
+h1 {
+  text-align: center;
+  font-family: "Segoe UI Black";
+  font-size: 2rem;
+  color: #000;
+}
+.fuckcss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  word-wrap: break-word;
+  width: 500px;
+  text-align: left;
+  color: #000;
+  font-family: "Yu Gothic UI Semibold";
+  font-size: 1rem;
+}
+.img {
+  float: right;
+  margin: 1rem 0rem 1rem 5rem;
+}
+.text1 {
+  transform: translateX(-10%);
+}
+.text2 {
+  width: 1000px;
+}
+video {
+  width: 100%;
+}
+
+footer {
+  background-color: #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottomtext {
+  padding-left: 1rem;
+  font-family: "Adobe Gothic Std B";
+  color: #fff;
+}
+
+@media screen and (orientation:landscape) and (max-width:1912px) {
+  body {
+    background-image: none;
+    background-color: #181825;
+  }
+  header {
+    visibility: hidden;
+  }
+  .main {
+    visibility: hidden;
+  }
+  footer {
+    visibility: hidden;
+  }
+  .smallscreen {
+    visibility: visible;
+  }
+}
